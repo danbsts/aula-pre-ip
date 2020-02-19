@@ -3,7 +3,7 @@ from poo.conta import Conta
 conta = Conta("Daniel", 21, 1000)
 conta2 = Conta("Daniel", 2, 10)
 
-print(conta.constante)
+print(conta.limite)
 print(conta2.constante)
 print(conta.getSaldo())
 print(type(conta), end="nandamovei")

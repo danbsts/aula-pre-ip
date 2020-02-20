@@ -1,14 +1,14 @@
-nome = input("Me diz teu nome pelo audio:")
-idade = input()
-if idade.isnumeric():
-    idade = int(idade)
+nome = "daniel"
+idade = 21
+# if idade.isnumeric():
+#     idade = int(idade)
 print("%.0f" % (idade/2))
 
 print(nome * 2)
 
 print(idade * 2, "dobro", "da", "idade")
 # o mesmo que
-print("{0} dobro da idade".format(idade*2)) # o numero tem que estar no range -> {}
+print("{} dobro da idade".format(idade*2)) # o numero tem que estar no range -> {}
 # ou
 print(str(idade*2) + " dobro da idade")
 

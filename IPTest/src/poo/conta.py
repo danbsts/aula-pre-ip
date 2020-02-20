@@ -1,11 +1,12 @@
 class Conta:
     constante = 1
 
+
     def __init__(self, nome, idade, saldo, limite=1000):
         self.nome = nome
         self._idade = idade
         self.__saldo = saldo
-        self.limite = 1000
+        self.limite = limite
         Conta.constante += 1
 
     def getSaldo(self):

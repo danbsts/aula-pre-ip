@@ -8,13 +8,15 @@ for i, j in listaDeTuplas:
 dicionario = {"daniel": "monitor", "alguem": "cpu", "ninguem": 2}
 print(dicionario)
 
-for (i, j) in dicionario.items():
-    print(i, j)
+for (chave, valor) in dicionario.items():
+    print(chave, valor)
 
 for i in dicionario:  # only keys
     print(i)
 
+print(dicionario.get(2), 'asddsadas')
 dicionario[2] = "daniel"
+dicionario['cpu'] = 'alguem'
 print(dicionario)
 
 print(dicionario.get(22))

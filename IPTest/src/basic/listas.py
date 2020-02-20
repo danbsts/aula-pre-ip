@@ -2,7 +2,7 @@
 
 lista = ["daniel", "aula", "de", "python", "hoje eu nao dormi"]
 
-for palavra in lista:
+for i, palavra in enumerate(lista):
     print(palavra)
 
 lista.append("dale final")
@@ -10,16 +10,16 @@ print(lista)
 
 print(lista[2])
 
-lista.insert(11111, "opa?") # lista[8] falharia - nao possui posicao especificada
+lista.insert(-1, "opa?") # lista[8] falharia - nao possui posicao especificada
 print(lista)
 
 lista.remove("daniel")
 print(lista)
 
 # cria uma lista de 0 a 6 pulando de 2 em 2 - exlucisvo, sem 6
-print(list(range(0, 6, 1)))
+print(list(range(0, 6, 2)))
 
-print(lista[2:])
+print(lista[1:])
 
 # matriz :D
 
@@ -35,3 +35,5 @@ for i in range(x):
         matriz[i].append(int(input()))
 
 print(matriz)
+
+lista.sort()

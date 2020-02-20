@@ -1,4 +1,5 @@
 from poo.conta import Conta
+from poo.aplicacao import Aplicacao
 
 
 class Poupanca(Conta):
@@ -10,7 +11,7 @@ class Poupanca(Conta):
         self.rendimento = rendimento
 
     def sacar(self, quantia):
-        saqueConta = super()
+        saqueConta = super().sacar()
         if saqueConta == 0:
             return 0
         self.__saldo -= (quantia + Poupanca.taxaSaque)

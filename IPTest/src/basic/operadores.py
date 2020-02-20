@@ -7,7 +7,7 @@ print(x == int(y))
 print(x < y)
 print(x >= y)
 
-if not x == y:
+if not 15 < x < 20:
     print("e igual mesmo")
 else:
     print("sai dai")
